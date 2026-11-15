@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Financial profitability comparison of Loblaw and Empire Company Limited.">
+  <title>Loblaw vs Empire | Profitability Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <p class="eyebrow">CANADIAN RETAIL FINANCIAL ANALYSIS</p>
+    <h1>Loblaw vs. Empire</h1>
+    <p>Gross Profit Margin & Adjusted EBITDA Margin</p>
+    <p class="subtitle">
+      A comparative analysis of profitability, business mix,
+      economies of scale, and competitive strategies.
+    </p>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="panel">
+    <h2>Research Question</h2>
+    <p>
+      How does Loblaw compare with Empire in gross profit margin
+      and adjusted EBITDA margin, and what factors explain their
+      profitability differences?
+    </p>
+  </section>
+
+  <section>
+    <h2>Financial Performance Overview</h2>
+    <div class="kpi-grid">
+      <div class="kpi">
+        <span>Loblaw Gross Margin</span>
+        <strong>32.2%</strong>
+        <small>Q2 2026 Retail</small>
+      </div>
+      <div class="kpi">
+        <span>Empire Gross Margin</span>
+        <strong>27.1%</strong>
+        <small>FY2026</small>
+      </div>
+      <div class="kpi">
+        <span>Loblaw EBITDA Margin</span>
+        <strong>12.2%</strong>
+        <small>Q2 2026</small>
+      </div>
+      <div class="kpi">
+        <span>Empire EBITDA Margin</span>
+        <strong>8.2%</strong>
+        <small>Q4 FY2026</small>
+      </div>
+    </div>
+    <p class="notice">
+      Preliminary comparison figures supplied for this project.
+      Reporting periods and segment definitions differ.
+      Verify against official company filings before submission.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>1. Gross Profit Margin Comparison</h2>
+    <p>
+      Purpose: Compare gross profitability and identify differences
+      in revenue mix and retail operations.
+    </p>
+    <div class="chart-container">
+      <canvas id="grossChart"></canvas>
+    </div>
+    <p id="grossAnalysis" class="analysis"></p>
+  </section>
+
+  <section class="panel">
+    <h2>2. Adjusted EBITDA Margin Comparison</h2>
+    <p>
+      Purpose: Compare adjusted operating profitability
+      across the reported periods.
+    </p>
+    <div class="chart-container">
+      <canvas id="ebitdaChart"></canvas>
+    </div>
+    <p id="ebitdaAnalysis" class="analysis"></p>
+  </section>
+
+  <section class="panel">
+    <h2>3. Business Mix and Profitability Drivers</h2>
+    <p>
+      Loblaw and Empire operate different business models.
+      Their segment composition may influence consolidated margins.
+    </p>
+    <div class="mix-grid">
+      <div>
+        <h3>Loblaw</h3>
+        <ul>
+          <li>Food retail</li>
+          <li>Shoppers Drug Mart</li>
+          <li>Pharmacy and healthcare</li>
+          <li>Beauty and cosmetics</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Empire</h3>
+        <ul>
+          <li>Sobeys</li>
+          <li>Farm Boy</li>
+          <li>Longo's</li>
+          <li>Fuel operations</li>
+        </ul>
+      </div>
+    </div>
+    <p class="notice">
+      Segment percentages are not displayed because comparable,
+      verified segment revenue figures have not yet been loaded.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>4. Supporting Analysis</h2>
+    <div class="analysis-grid">
+      <article>
+        <h3>Business Mix</h3>
+        <p>
+          Shoppers Drug Mart provides pharmacy, healthcare,
+          and beauty revenue streams that differ from traditional
+          grocery operations.
+        </p>
+      </article>
+      <article>
+        <h3>Economies of Scale</h3>
+        <p>
+          Loblaw's larger retail operations may provide
+          opportunities to distribute supply-chain, technology,
+          and administrative costs across a wider revenue base.
+        </p>
+      </article>
+      <article>
+        <h3>Higher-Margin Revenue</h3>
+        <p>
+          Pharmacy services, prepared foods, and retail media
+          offer potential opportunities to improve profitability.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>5. Strategic Recommendations</h2>
+    <div class="mix-grid">
+      <article>
+        <h3>Empire (Sobeys)</h3>
+        <ul>
+          <li>Expand in-store pharmacy services.</li>
+          <li>Grow premium prepared foods through Farm Boy and Longo's.</li>
+          <li>Develop Empire Media+ advertising revenue.</li>
+          <li>Target adjusted EBITDA margins above 8.5%.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Loblaw (Real Canadian Superstore)</h3>
+        <ul>
+          <li>Expand PC Optimum personalized offers.</li>
+          <li>Cross-promote Shoppers Drug Mart products.</li>
+          <li>Increase loyalty across grocery and pharmacy.</li>
+          <li>Protect its profitability advantage.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>6. Data Sources and Methodology</h2>
+    <ul>
+      <li><a href="https://www.loblaw.ca/en/investors-reports/" target="_blank">Loblaw financial reports</a></li>
+      <li><a href="https://www.empireco.ca/financial-highlights" target="_blank">Empire financial highlights</a></li>
+      <li><a href="https://www.chartjs.org/" target="_blank">Chart.js documentation</a></li>
+    </ul>
+
+    <p><strong>Gross Profit Margin:</strong></p>
+    <code>(Gross Profit / Revenue) × 100</code>
+
+    <p><strong>Adjusted EBITDA Margin:</strong></p>
+    <code>(Adjusted EBITDA / Revenue) × 100</code>
+
+    <p>
+      The preliminary comparison figures must be checked against
+      original financial statements. Quarterly and annual figures
+      should not be treated as directly equivalent.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Student Financial Analysis Project | Loblaw vs Empire</p>
+  <p>Data sources and calculations should be verified before publication.</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
