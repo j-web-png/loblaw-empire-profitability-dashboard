@@ -1,0 +1,27 @@
+{
+  "project": "Loblaw vs Empire Profitability Dashboard",
+  "data_classification": "Preliminary supplied figures and verified-source fields pending completion",
+  "currency": "CAD",
+  "sources": [
+    {
+      "company": "Loblaw",
+      "name": "Investor Financial Reports",
+      "url": "https://www.loblaw.ca/en/investors-reports/"
+    },
+    {
+      "company": "Empire",
+      "name": "Financial Highlights",
+      "url": "https://www.empireco.ca/financial-highlights"
+    },
+    {
+      "company": "Empire",
+      "name": "FY2026 Earnings Results",
+      "url": "https://www.empireco.ca/news/empire-reports-eps-of-094-in-the-fourth-quarter-and-fiscal-2026-results"
+    }
+  ],
+  "methodology": {
+    "gross_margin": "(Gross Profit / Revenue) * 100",
+    "adjusted_ebitda_margin": "(Adjusted EBITDA / Revenue) * 100",
+    "basis_points": "(Company A Margin - Company B Margin) * 100"
+  }
+}
